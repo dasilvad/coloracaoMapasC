@@ -30,6 +30,7 @@ char *estados[26][12]= {{"BA", "SE", "AL","PE","PI","MA","TO","GO","MG","ES", "e
 { "SE","AL","BA", "end"},
 { "RS","SC", "end"},
 { "AP","PA", "end"}};
+
 char *cor [4];
 
 struct vertice {
@@ -191,7 +192,7 @@ void desalocarGrafo(){
 int main (){
     criarGrafo();
     inserirEstadosNoGrafo();
-    imprimirGrafo();
+    //imprimirGrafo();
     colorirMapaBrasil("blue", "red", "yellow", "green");
     imprimirGrafoColorido();
     desalocarGrafo();
